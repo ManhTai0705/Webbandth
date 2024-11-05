@@ -1,0 +1,134 @@
+body { 
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .lookup-box {
+    background-color: #d3d3d3;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  h2 {
+    color: #e34234;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-group input {
+    padding: 15px 15px 15px 40px;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .input-group i {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: #888;
+  }
+  
+  .captcha-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+  }
+
+  .captcha {
+    display: flex;
+    background-color: #f5f5dc;
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-decoration: line-through;
+    width: 60%;
+    justify-content: center;
+  }
+  
+  .captcha span {
+    margin: 0 5px;
+    font-size: 1.5em;
+    color: black;
+  }
+  
+  .refresh {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #26a69a;
+    outline: none !important;  /* Ensure no outline appears on focus */
+    box-shadow: none !important;  /* Remove any shadow effects */
+    background-color: transparent !important;  /* Ensure no background color change */
+  }
+  
+  .refresh:focus,
+  .refresh:active,
+  .refresh:focus-visible {
+    outline: none !important;  /* No outline */
+    border: none !important;  /* No border */
+    background-color: transparent !important;  /* No background change */
+    box-shadow: none !important;  /* No shadow */
+    -webkit-box-shadow: none !important;  /* For webkit browsers */
+    -moz-box-shadow: none !important;  /* For Mozilla browsers */
+  }
+  
+  .refresh:focus-visible {
+    outline: none !important;
+  }
+  
+  input:focus,
+  button:focus,
+  button:focus-visible,
+  input:focus-visible {
+    outline: none !important;  /* Remove focus outline for all interactive elements */
+    box-shadow: none !important;  /* No box shadow */
+    border: none !important;  /* Remove border */
+  }
+  
+  .captcha-input {
+    margin-top: 10px;
+  }
+  
+  .captcha-input input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-btn {
+    background-color: #866fb5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .search-btn:hover {
+    background-color: #705ba5;
+  }
+  

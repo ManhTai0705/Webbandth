@@ -1,0 +1,413 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ff6200;
+    padding: 10px 20px;
+    width: 100%;
+  }
+  
+  .navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .language-selector, .app-download {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+  
+  .language-selector .icon, .app-download .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+  .navbar-center {
+    text-align: center;
+  }
+  
+  .navbar-center .logo {
+    width: 150px;
+  }
+  
+  .login-button {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border: 2px solid orange;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .login-button .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+  
+  .login-button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .navbar-menu {
+    width: 100%;
+    background-color: #ff6200;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .navbar-menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar-menu ul li {
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .navbar-menu ul li:hover {
+    border-bottom: 3px solid white;
+  }
+  .search-container1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  /* Search box wrapper */
+  .search-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for input fields */
+  .input-field {
+    width: 550px;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-field:focus {
+    border-color: #f15a24;
+  }
+  
+  /* Button for switching directions */
+  .switch-button {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .switch-button i {
+    font-size: 20px;
+    color: #f15a24;
+  }
+  
+  /* Table header styling */
+  .table-header {
+    display: flex;
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    border-radius: 10px;
+    width: 1200px;
+    border: 1px solid #ddd;
+  }
+  
+  .header-item-1 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    width: 330px;
+    text-align: left;
+    padding-left: 10px;
+  }
+  
+  .header-item-2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    width: 105px;
+    text-align: left;
+    padding-left: 10px;
+  }
+  
+  .header-item-3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    width: 150px;
+    text-align: left;
+    padding-left: 10px;
+  }
+  
+  .header-item-4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    width: 220px;
+    text-align: left;
+  }
+  
+  .header-item-5 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    width: 150px;
+    text-align: left;
+    padding-left: 10px;
+  }
+  
+  
+  /* Container for the table */
+  .table-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+  }
+  
+  /* Table styling */
+  .route-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Row styling */
+  .route-row {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .route-row:last-child {
+    border-bottom: none;
+  }
+  
+  /* Route details (departure and destination) */
+  .route-details {
+    display: flex;
+    align-items: center;
+    max-width: 140px;
+    gap: 5px;
+    padding-left: 10px;
+    white-space: nowrap; /* Prevent line breaks */
+  }
+  
+  .from-location, .to-location {
+    color: #f15a24;
+    font-weight: bold;
+  }
+  
+  .route-details i {
+    font-size: 14px;
+    color: #f15a24;
+    transform: rotate(90deg); /* Horizontal arrow */
+  }
+  
+  /* Button styling */
+  .find-route-btn {
+    background-color: #fddbd4;
+    color: #f15a24;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .find-route-btn:hover {
+    background-color: #f15a24;
+    color: #fff;
+  }
+  
+  /* Styling for individual columns */
+  td {
+    padding: 12px 10px;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Ensures each column has a set width for consistent alignment */
+  .route-table td:nth-child(2) {
+    width: 100px; /* Adjust the width to suit your needs */
+  }
+  
+  /* Align button column to the right */
+  td:last-child {
+    text-align: right;
+  }
+  .footer {
+    background-color: #faf0e6;
+    padding: 40px 20px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .contact-info, .footer-links, .social-media {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .contact-info {
+    max-width: 350px;
+  }
+  
+  .contact-info h1 {
+    color: red;
+    font-size: 36px;
+    margin: 10px 0;
+  }
+  
+  .contact-info p {
+    margin: 10px 0;
+  }
+  
+  .contact-info a {
+    color: red;
+  }
+  
+  .app-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .app-icon {
+    width: 130px;
+  }
+  
+  .futa-logo {
+    margin-top: 20px;
+  }
+  
+  .futa-logo img {
+    width: 150px;
+    display: block;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .footer-column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-column li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-column li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .social-media {
+    text-align: center;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Center align the icons */
+    margin-top: 10px; /* Add some spacing between the text and icons */
+  }
+  
+  .social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Make the icons round */
+  }
+  
+  
+  .partner-logos {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .partner-logos img {
+    width: 130px;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .social-media {
+      text-align: center;
+    }
+  
+    .social-icons {
+      justify-content: center;
+    }
+  
+    .partner-logos {
+      justify-content: center;
+    }
+  }
